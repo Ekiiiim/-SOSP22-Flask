@@ -1,11 +1,9 @@
-# import flask libraries
 from flask import Flask, jsonify, request, render_template
 from bs4 import BeautifulSoup
 import requests
 import random
 app = Flask(__name__)
 
-# flask run -> server runs at http://127.0.0.1:24000/ 
 @app.route("/")
 def get_random_riddle():
     # generate the number of brain teaser
